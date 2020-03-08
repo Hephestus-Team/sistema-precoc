@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Gotham Bold";
+    src: url("font/Gotham-Font/Gotham-Bold.otf");
+}
+
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("font/Gotham-Font/GothamMedium.ttf");
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url("font/Gotham-Font/GothamBook.ttf");
+}
+
+@font-face {
+    font-family: "Gotham Light";
+    src: url("font/Gotham-Font/GothamLight.ttf");
+}
+
+h1 {
+    font-family: "Gotham Bold";
+}
+
+h2, h3 {
+    font-family: "Gotham Medium";
+}
+
+input, button, option, th[scope=col], p {
+    font-family: "Gotham Book";
+}
+
+label, span, select, th[scope=row], a {
+    font-family: "Gotham Light"
+}

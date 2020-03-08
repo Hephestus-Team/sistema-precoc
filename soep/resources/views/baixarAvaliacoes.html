@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Download Avaliacoes | SOEP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="../../../content/logo-titulo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../content/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+<body>
+      
+    <div class="container my-5 border border-dark rounded text-center col col-12 col-xl-5 col-lg-8 col-md-10 col-sm-12" id="meio1">
+
+        <h2 class="mt-5">Buscar avaliações</h2>
+        
+        <form method="POST">
+
+            <div class="form-row m-5 mt-n5">
+                <h5>Turma</h5>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Digite o nome da turma" id="turma">
+                    <div class="invalid-tooltip">
+                        Preencha com uma turma
+                    </div>
+                </div>
+
+                <div class="col-6 mt-3">
+                    <h5>Ano</h5>
+                    <div class="input-group">
+                        <input type="number" class="btn btn-light border border-secondary form-control" id="ano" required>
+                        <div class="invalid-tooltip">
+                            Preencha com o ano para baixar
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="col-6 mt-3">
+                    <h5>Trimestre</h5>
+                    <select id="trimestre" class="form-control">
+                        <option value="1">1° Trimestre</option>
+                        <option value="2">2° Trimestre</option>
+                        <option value="3">3° Trimestre</option>
+                    </select>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <input type="button" class="btn btn-info align-middle mt-4" value="Baixar turma" id="baixarTurma">
+                    <input type="button" class="btn btn-primary align-middle mt-4" value="Baixar todas as turmas" id="baixarTodas">
+                    <br>
+                    <a style="color: #1e10ba;" href="">Como esta configurado o Excel ?</a>
+
+                </div>
+            </div>
+
+        </form>
+
+        <div class="d-flex justify-content-center my-4">
+            <input class="btn border border-primary" type="button" value="Voltar" id="voltar">
+        </div>
+        
+    </div>
+
+    <footer style="flex-shrink: none;" class="py-4 text-white-50">
+        <div class="container text-center">
+            <small>© 2019 Copyright: <a href="https://github.com/danielShz" target="_blank"> Daniel Arruda </a> & <a href="https://github.com/muniz034" target="_blank"> Pedro Muniz </a> </small>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="finishModal" tabindex="-1" role="dialog" aria-labelledby="finishModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="background-color: #F3FFC6">
+          <div class="modal-header">
+            <h5 class="modal-title" id="finishModalLabel">Tem certeza que deseja fazer essas alterações ?</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-light border border-dark" id="sim">Sim</button>
+            <button type="button" class="btn btn-light border border-dark" id="nao">Não</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="continueModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="text-align: center;">
+                    <h4 class="modal-title" style="text-align: center;">Exemplo de tabela</h4>
+                </div>
+                <div class="modal-body mx-auto">
+                      <img src="../../../content/soep/tabela-avaliacao.png">
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-info" id="continuar" style="min-width: 120px;">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/baixarAvaliacoes.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Manager\\": "lib/",
+            "SpreadsheetFilter\\": "lib/"
+        }
+    }
+}

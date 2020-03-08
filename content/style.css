@@ -1,0 +1,21 @@
+@import "font.css";
+@import "color.css";
+
+#logo {
+    background-image: url('logo-menu.png'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+input[type=button][value=Enviar] {
+    width: 20%; 
+    height: 50px; 
+    min-width: 200px;
+}
+
+input[type=button][value=Voltar] {
+    width: 20%; 
+    height: 50px; 
+    min-width: 180px;
+    background-color: white;
+}

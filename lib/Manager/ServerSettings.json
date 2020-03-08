@@ -1,0 +1,9 @@
+{
+    "dbconfig": {
+        "USER": "USERXXX",
+        "PASSWORD": "PASSWORDXXX"
+    },
+    "serverconfig": {
+        "DEFAULT_TIMEZONE": "XXX/XXX_XXX"
+    }
+}
